@@ -1,23 +1,17 @@
 import { useState } from "react";
 import { Canvas } from "@react-three/fiber";
-import { Box } from "./Box";
-import{ChartComponent} from "./ChartComponent";
-import {initialData} from "./ChartComponent";
+import { ChartComponent, initialData } from "./ChartComponent";
 import "./App.css";
-import Box from "./Box";
+import Gradient from "./Components/Gradient";
 function App(props) {
   const [count, setCount] = useState(0);
 
   return (
-    <div>
-      <ChartComponent {...props} data={initialData}></ChartComponent>
+    <div className={'container'}>
 
-      <Canvas>
-        <ambientLight />
-        <pointLight position={[10, 10, 10]} />
-        <Box position={[-1.2, 0, 0]} />
-        <Box position={[1.2, 0, 0]} />
-      </Canvas>
+        <ChartComponent {...props} data={initialData}>
+          </ChartComponent>
+
     </div>
   );
 }

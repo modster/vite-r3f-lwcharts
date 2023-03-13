@@ -9,13 +9,16 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@react-three/fiber": "^8.12.0",
+    "@react-three/drei": "^9.57.2",
+    "@react-three/fiber": "^8.9.1",
+    "drei": "^2.2.21",
     "lightweight-charts": "^4.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "three": "^0.150.1"
   },
   "devDependencies": {
+    "@react-three/editor": "^0.0.16",
     "@types/react": "^18.0.28",
     "@types/react-dom": "^18.0.11",
     "@vitejs/plugin-react": "^3.1.0",
